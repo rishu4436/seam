@@ -1,6 +1,7 @@
 # Build state
 
 Branch: `build/seam`  
+Commit: `e6098e6`  
 Version: `0.0.1`  
 Status: CODE COMPLETE — LIVE VERIFICATION PENDING
 
