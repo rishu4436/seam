@@ -1,0 +1,38 @@
+{
+  "seam": "1",
+  "actions": [
+    {
+      "id": "mint-units",
+      "capability": "assets.mint",
+      "params": {
+        "assetId": "1",
+        "beneficiary": {
+          "domain": "ss58",
+          "value": "REPLACE_WITH_TESTNET_ACCOUNT"
+        },
+        "amount": "1000"
+      }
+    },
+    {
+      "id": "intentional-revert",
+      "capability": "revive.call",
+      "params": {
+        "dest": "0x0000000000000000000000000000000000000000",
+        "value": "0",
+        "data": "0xdead"
+      }
+    },
+    {
+      "id": "mint-receipt-nft",
+      "capability": "nfts.mint",
+      "params": {
+        "collectionId": "1",
+        "itemId": "2",
+        "owner": {
+          "domain": "ss58",
+          "value": "REPLACE_WITH_TESTNET_ACCOUNT"
+        }
+      }
+    }
+  ]
+}

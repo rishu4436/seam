@@ -1,0 +1,8 @@
+{
+  "name": "@seam/settlement-contract",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/settlement.test.mjs"
+  }
+}

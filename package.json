@@ -1,0 +1,28 @@
+{
+  "name": "seam",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "SEAM — runtime-aware CrossVM execution control plane for Portaldot V3",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "build": "pnpm -r --filter @seam/core --filter @seam/portaldot --filter @seam/sdk --filter @seam/cli build && pnpm --filter @seam/console build",
+    "typecheck": "pnpm -r --filter @seam/core --filter @seam/portaldot --filter @seam/sdk --filter @seam/cli --filter @seam/console typecheck",
+    "test": "pnpm -r --filter @seam/core --filter @seam/portaldot --filter @seam/sdk --filter @seam/cli test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "discover:portaldot": "pnpm --filter @seam/cli exec seam inspect",
+    "console": "pnpm --filter @seam/console dev",
+    "cli": "pnpm --filter @seam/cli start"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vitest": "^2.1.8"
+  }
+}

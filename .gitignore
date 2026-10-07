@@ -1,0 +1,22 @@
+New Text Document.txt
+node_modules
+dist
+.turbo
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+coverage
+.vite
+.cache
+*.tsbuildinfo
+receipts/*.json
+!receipts/.gitkeep
+.pnpm-store
+.idea
+.vscode
+*.local
+contracts/seam-settlement/artifacts
+contracts/seam-settlement/cache
+contracts/seam-settlement/typechain-types

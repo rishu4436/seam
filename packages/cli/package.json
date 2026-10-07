@@ -1,0 +1,23 @@
+{
+  "name": "@seam/cli",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": {
+    "seam": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "@seam/core": "workspace:*",
+    "@seam/portaldot": "workspace:*",
+    "@seam/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
